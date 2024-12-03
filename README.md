@@ -91,9 +91,9 @@ The performance of ConvLSTM, PredRNN, and MaxViT was evaluated on a standardized
 
 | Model     | Test Loss (MSE) | Test SSIM   | Training Time         | Epochs |
 |-----------|------------------|-------------|-----------------------|--------|
-| ConvLSTM  | 0.0012           | 0.9296      | Shorter training time | Fewer  |
-| PredRNN   | 0.0013           | 0.9215      | Comparable to ConvLSTM| Similar|
-| MaxViT    | 0.0049           | 0.7784      | Longer training time | 30 more|
+| ConvLSTM  | 0.0012           | 0.9296      | Shorter training time | 20  |
+| PredRNN   | 0.0013           | 0.9215      | Comparable to ConvLSTM| 20|
+| MaxViT    | 0.0049           | 0.7784      | Longer training time | 50|
 
 ### Summary of Results
 
