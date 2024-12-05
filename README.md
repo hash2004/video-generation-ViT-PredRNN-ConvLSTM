@@ -22,7 +22,7 @@ The dataset used for this project is the [UCF101 dataset](https://www.kaggle.com
 
 ## Abstract
 
-Video generation is a complex task that involves modeling both spatial and temporal dependencies within video data. This report presents a comparative analysis of three prominent models used for video generation: Convolutional Long Short-Term Memory (ConvLSTM), PredRNN, and MaxViT. The performance of each model is evaluated based on Mean Squared Error (MSE) and Structural Similarity Index Measure (SSIM) on a standardized test dataset. While ConvLSTM and PredRNN demonstrate superior performance with lower MSE and higher SSIM scores, MaxViT, despite its advanced transformer architecture, underperforms due to its data-hungry nature and lack of inductive bias. This analysis delves into the architectural nuances of each model, their training dynamics, and the implications of their performance metrics.
+Video generation is a complex task that involves modeling both spatial and temporal dependencies within video data. This README.md file presents a comparative analysis of three prominent models used for video generation: Convolutional Long Short-Term Memory (ConvLSTM), PredRNN, and MaxViT. The performance of each model is evaluated based on Mean Squared Error (MSE) and Structural Similarity Index Measure (SSIM) on a standardized test dataset. While ConvLSTM and PredRNN demonstrate superior performance with lower MSE and higher SSIM scores, MaxViT, despite its advanced transformer architecture, underperforms due to its data-hungry nature and lack of inductive bias. This analysis digs into the architectural nuances of each model, their training dynamics, and the implications of their performance metrics.
 
 ---
 
@@ -52,7 +52,7 @@ The comparative study aims to understand the strengths and limitations of each m
 
 **Key Features:**
 - **Spatial-Temporal Modeling**: By integrating convolutional layers, ConvLSTM effectively models both spatial features within frames and temporal dynamics across frames.
-- **Inductive Bias**: The convolutional operations introduce an inductive bias that leverages the spatial locality of video data, enhancing learning efficiency.
+- **Inductive Bias**: The convolutional operations introduce an inductive bias that uses the spatial locality of video data, enhancing learning efficiency.
 
 ### PredRNN
 
@@ -91,9 +91,11 @@ The performance of ConvLSTM, PredRNN, and MaxViT was evaluated on a standardized
 
 | Model     | Test Loss (MSE) | Test SSIM   | Training Time         | Epochs |
 |-----------|------------------|-------------|-----------------------|--------|
-| ConvLSTM  | 0.0012           | 0.9296      | Shorter training time | 20  |
-| PredRNN   | 0.0013           | 0.9215      | Comparable to ConvLSTM| 20|
-| MaxViT    | 0.0049           | 0.7784      | Longer training time | 50|
+| ConvLSTM  | 0.0012           | 0.9296      |        90 minutes     | 20 |
+| PredRNN   | 0.0013           | 0.9215      |       100 minutes     | 20 |
+| MaxViT    | 0.0049           | 0.7784      |       385 minutes     | 50 |
+
+All training was done on Colabs's A100 GPU.
 
 ### Summary of Results
 
