@@ -1,5 +1,6 @@
 # Comparative Analysis of Video Generation Models: ConvLSTM, PredRNN, and MaxViT
 
+---
 ## Table of Contents
 - [Abstract](#abstract)
 - [Introduction](#introduction)
@@ -9,16 +10,12 @@
   - [MaxViT](#maxvit)
 - [Experimental Results](#experimental-results)
 - [Discussion](#discussion)
+- [Acknowledgements](#acknowledgements)
+- [Data](#data)
 - [Conclusion](#conclusion)
 - [References](#references)
 
 ---
-### Acknowledgements
-This project was a collaborative effort with [Huzaifa Khan](https://github.com/huzaifakhan04), who contributed significantly to the development of the PredRNN and ConvLSTM models.
-
-### Data
-The dataset used for this project is the [UCF101 dataset](https://www.kaggle.com/datasets/matthewjansen/ucf101-action-recognition/data), which contains videos of various human activities and is widely utilized for action recognition tasks.
-
 
 ## Abstract
 
@@ -134,6 +131,12 @@ The experimental results highlight distinct differences in the performance and t
 This comparative analysis underscores the strengths of recurrent-based models, ConvLSTM and PredRNN, in video generation tasks, particularly in scenarios with limited data and computational resources. Their ability to incorporate spatial inductive biases and efficiently model temporal dynamics results in superior performance metrics compared to transformer-based architectures like MaxViT. While MaxViT offers advanced mechanisms for capturing complex dependencies through multi-axis attention, its data-hungry nature and lack of inductive bias present significant challenges in achieving optimal performance in video generation tasks. Future work may explore hybrid approaches that combine the strengths of both recurrent and transformer-based models to enhance video generation capabilities.
 
 ---
+
+## Acknowledgements
+This project was a collaborative effort with [Huzaifa Khan](https://github.com/huzaifakhan04), who contributed significantly to the development of the PredRNN and ConvLSTM models. 
+
+## Data
+The dataset used for this project is the [UCF101 dataset](https://www.kaggle.com/datasets/matthewjansen/ucf101-action-recognition/data), which contains videos of various human activities and is widely utilized for action recognition tasks.
 
 ## References
 
