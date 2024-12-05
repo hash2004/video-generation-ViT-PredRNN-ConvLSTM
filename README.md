@@ -28,9 +28,9 @@ Video generation is a complex task that involves modeling both spatial and tempo
 
 ## Introduction
 
-Video generation entails the creation of coherent and realistic video sequences from given inputs. It requires capturing both spatial features within individual frames and temporal dynamics across consecutive frames. Over the years, various architectures have been proposed to tackle this challenge, leveraging advancements in recurrent neural networks and transformer-based models.
+Video generation entails the creation of coherent and realistic video sequences from given inputs. It requires capturing both spatial features within individual frames and temporal dynamics across consecutive frames. Over the years, various architectures have been proposed to tackle this challenge, we'll be looking into 3 different approaches. 
 
-This report focuses on three such architectures:
+This README focuses on three such architectures:
 1. **ConvLSTM**: Integrates convolutional operations within the traditional LSTM framework to better capture spatial dependencies.
 2. **PredRNN**: Enhances the LSTM architecture with dual memory states to model complex spatio-temporal relationships.
 3. **MaxViT**: Adapts the transformer architecture, known for its prowess in natural language processing, to handle video data through multi-axis attention mechanisms.
